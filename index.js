@@ -1,22 +1,19 @@
 let btn = document.getElementById('button');
-btn.addEventListener('click', function() {
-  let input = document.getElementById('input').value;
-  let output = document.getElementById('output');
-  let result = '';
-  for (let i = 0; i < input.length; i++) {
-	if (input[i] === 'a') {
-	  result += '4';
-	} else if (input[i] === 'e') {
-	  result += '3';
-	} else if (input[i] === 'i') {
-	  result += '1';
-	} else if (input[i] === 'o') {
-	  result += '0';
-	} else if (input[i] === 'u') {
-	  result += '|_|';
-	} else {
-	  result += input[i];
+
+
+
+function genPassword() {
+	var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	var passwordLength = 12;
+	var password = "";
+	for (var i = 0; i <= passwordLength; i++) {
+		var randomNumber = Math.floor(Math.random() * chars.length);
+		password += chars.substring(randomNumber, randomNumber +1);
+		document.querySelector('.password').innerHTML = password;
+		document.querySelector('.password1').innerHTML = password;
+		document.querySelector('.password2').innerHTML = password;
+		document.querySelector('.password3').innerHTML = password;
+		console.log(password)
+	  }
 	}
-  }
-  output.innerHTML = result;
-});
+	btn.addEventListener('click', genPassword);

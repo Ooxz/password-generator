@@ -1,5 +1,5 @@
 html {
-	max-width: 550px;
+	max-width: 770px;
 	max-height: 550px;
 }
 body {
@@ -63,11 +63,36 @@ border-radius: 6px;
 }
 .line {
 	margin-left: 52px;
-	width: 500px;
+	width: 770px;
 }
 .password {
 	background-color: #273549;
 	padding: 12px 101px;
 	margin-left: 52px;
 	margin-top: 20px;
+	color: #10B981;
+}
+
+.password1 {
+	background-color: #273549;
+	padding: 12px 101px;
+	margin-left: 52px;
+	margin-top: 20px;
+	color: #10B981;
+}
+
+.password2 {
+	background-color: #273549;
+	padding: 12px 101px;
+	margin-left: 52px;
+	margin-top: 20px;
+	color: #10B981;
+}
+
+.password3 {
+	background-color: #273549;
+	padding: 12px 101px;
+	margin-left: 52px;
+	margin-top: 20px;
+	color: #10B981;
 }
