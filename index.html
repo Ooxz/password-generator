@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/231cc9a143.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
 	<title>Password Generator</title>
 </head>
@@ -14,16 +16,54 @@
 		<p class="subtitle">Never use an insecure password again.</p>
 	</header>
 	<main>
-		<div>
+			<div class="listeners">	
 			<button class="btn" id="button"><img class="img-btn"src="icons/icon-1.png" alt="password">Generate passwords</button>
+			<button type="button" class="minusBtn" id="minus"><i id="minusIcon" class="fa fa-minus"></i></button>
+			<input type="number" class="input" id="passwordLength" value="12" placeholder="enter the password length">
+			<button type="button" class="plusBtn" id="plus"><i id="plusIcon" class="fa fa-plus"></i></button>
 		</div>
 		<img class="line" src="icons/line.png" alt="line">
 			<div class="password-wrap">
-			<div class="password"><img src="icons/icon-2.png" alt="password"></div>
-			<div class="password1"><img src="icons/icon-2.png" alt="password"></div>
-			<div class="password2"><img src="icons/icon-2.png" alt="password"></div>
-			<div class="password3"><img src="icons/icon-2.png" alt="password"></div>
+			<div id="password1" class="password"><img src="icons/icon-2.png" alt="password"></div>
+			<div id="password2" class="password"><img src="icons/icon-2.png" alt="password"></div>
+			<div id="password3" class="password"><img src="icons/icon-2.png" alt="password"></div>
+			<div id="password4" class="password"><img src="icons/icon-2.png" alt="password"></div>
 		</div>
+		<div id="myModal" class="modal">
+      
+			<!-- Modal content -->
+			<div class="bground">
+				<div class="content">
+			<div class="modal-content">
+			  <span class="closeMod"></span>
+			  <div class="textBtn">
+				<p class="modalText">Merci de choisir</p>
+				<p class="modalTextMore">un nombre inférieur</p>
+				<p class="modalText" >à 13</p>
+			  <button id ="thanksBtn" type="button" value="Close this windows" class="btn-thanks modal-thanks">
+				Fermer
+			  </button>
+			</div>
+			</div>
+				</div>
+				</div>
+				<div id="myModal2" class="modal2">
+				<div class="bground2">
+					<div class="content2">
+			<div class="modal-content2">
+				<span class="closeMod2"></span>
+				<div class="textBtn2">
+				<p class="modalText2">Merci de choisir</p>
+				<p class="modalTextMore2">un nombre supérieur</p>
+				<p class="modalText2" >à 2</p>
+				<button id ="thanksBtn2" type="button" value="Close this windows" class="btn-thanks2 modal-thanks2">
+				  Fermer
+				</button>
+			  </div>
+			</div>
+			  </div>
+			</div>
+			</div>
 	</main>
 	<script src="index.js"></script>
 </body>

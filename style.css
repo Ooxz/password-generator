@@ -1,3 +1,10 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 html {
 	max-width: 770px;
 	max-height: 550px;
@@ -8,6 +15,186 @@ body {
 	background-color: #1F2937;
 }
 
+/* modal */
+
+.bground {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgba(26, 39, 156, 0.4);
+  }
+  
+  .content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5% auto;
+	width: 100%;
+	max-width: 500px;
+	background: #232323;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	color: #fff;
+	padding-top: 10px;
+  }
+
+  .bground2 {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgba(26, 39, 156, 0.4);
+  }
+  
+  .content2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5% auto;
+	width: 100%;
+	max-width: 500px;
+	background: #232323;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	color: #fff;
+	padding-top: 10px;
+  }
+
+  .textBtn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .modalText {
+	  color: white;
+	  font-weight: bold;
+	  font-size: 50px;
+	  margin: 0;
+  }
+
+  .modalTextMore {
+	  color: orange;
+	  font-weight: bold;
+	  font-size: 50px;
+	  margin: 0;
+  }
+
+  .textBtn2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .modalText2 {
+	  color: white;
+	  font-weight: bold;
+	  font-size: 50px;
+	  margin: 0;
+  }
+
+  .modalTextMore2 {
+	  color: orange;
+	  font-weight: bold;
+	  font-size: 50px;
+	  margin: 0;
+  }
+
+  .btn-thanks {
+	  background-color: orange;
+	  color: white;
+	  border: none;
+	  padding: 10px;
+	  font-size: 20px;
+	  border-radius: 10px;
+	  margin-top: 10px;
+	  cursor: pointer;
+  }
+
+  .btn-thanks2 {
+	background-color: orange;
+	color: white;
+	border: none;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+  
+  /* The Close Button */
+.closeMod {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	width: 32px;
+	height: 32px;
+	opacity: 1;
+	cursor: pointer;
+	transform: scale(0.7);
+  }
+  .closeMod:before,
+  .closeMod:after {
+	position: absolute;
+	left: 15px;
+	content: " ";
+	height: 33px;
+	width: 3px;
+	background-color: #fff;
+  }
+  .closeMod:before {
+	transform: rotate(45deg);
+  }
+  .closeMod:after {
+	transform: rotate(-45deg);
+  }
+
+  .closeMod2 {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	width: 32px;
+	height: 32px;
+	opacity: 1;
+	cursor: pointer;
+	transform: scale(0.7);
+  }
+  .closeMod2:before,
+  .closeMod2:after {
+	position: absolute;
+	left: 15px;
+	content: " ";
+	height: 33px;
+	width: 3px;
+	background-color: #fff;
+  }
+  .closeMod2:before {
+	transform: rotate(45deg);
+  }
+  .closeMod2:after {
+	transform: rotate(-45deg);
+  }
+
+  .modalText{
+	align-self: center;
+  }
+
+  .modalText2{
+	align-self: center;
+  }
 .header{
 	margin-left: 52px;
 	margin-top: 100px;
@@ -21,7 +208,7 @@ body {
 }
 
 .title2 {
-	color: #10B981;
+	color: orange;
 	margin-top: 0;
 	margin-bottom: 10px;
 	font-weight: bold;
@@ -34,11 +221,60 @@ body {
 	font-size: 20px;
 	margin-bottom: 40px;
 }
+.listeners {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.input {
+	display: flex;
+	align-items: center;
+	background-color: orange;
+	padding: 11px 20px 11px 20px;
+	margin-bottom: 20px;
+/* shadow/sm */
+
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+border-radius: 6px;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+.plusBtn {
+	background: none;
+	border: none;
+	align-self: baseline;
+	margin-top: 7px;
+	cursor: pointer;
+}
+#plusIcon{
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	color: orange;
+}
+
+.minusBtn {
+	background: none;
+	border: none;
+	margin-left: 52px;
+	align-self: baseline;
+	margin-top: 7px;
+	cursor: pointer;
+}
+#minusIcon{
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	color: orange;
+}
 
 .btn {
 	display: flex;
 	align-items: center;
-	background-color: #10B981;
+	background-color: orange;
 	padding: 9px 17px 9px 15px;
 	margin-left: 52px;
 	margin-bottom: 20px;
@@ -55,44 +291,26 @@ border-radius: 6px;
 	margin-right: 10px;
 }
 
+.line {
+	margin-left: 52px;
+	width: 720px;
+}
+
 .password-wrap {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	align-content: space-between;
 }
-.line {
-	margin-left: 52px;
-	width: 770px;
-}
+
 .password {
+	flex: 1;
 	background-color: #273549;
-	padding: 12px 101px;
+	padding: 12px 100px;
 	margin-left: 52px;
 	margin-top: 20px;
-	color: #10B981;
-}
-
-.password1 {
-	background-color: #273549;
-	padding: 12px 101px;
-	margin-left: 52px;
-	margin-top: 20px;
-	color: #10B981;
-}
-
-.password2 {
-	background-color: #273549;
-	padding: 12px 101px;
-	margin-left: 52px;
-	margin-top: 20px;
-	color: #10B981;
-}
-
-.password3 {
-	background-color: #273549;
-	padding: 12px 101px;
-	margin-left: 52px;
-	margin-top: 20px;
-	color: #10B981;
+	color: orange;
+	text-align: center;
+	border-radius: 5px;
+	resize: none;
 }
