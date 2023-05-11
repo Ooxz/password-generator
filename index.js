@@ -17,16 +17,16 @@ btn.addEventListener("click", genPassword);
 // addEventListeners to active plus and minus button to change the length of the password
 
 plusButton.addEventListener('click', function() {	
-	if(passwordLength.value < 12) {
-	passwordLength.value++;
+	if(passLength.value < 12) {
+    passLength.value++;
 	} else {
 		launchModal();
 	}
 });
 
 minusButton.addEventListener('click', function() {
-	if(passwordLength.value >= 3) {
-		passwordLength.value--;
+	if(passLength.value >= 4) {
+		passLength.value--;
 	} else {
 		launchModal2();
 	}
